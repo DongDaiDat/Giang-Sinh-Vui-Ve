@@ -400,7 +400,7 @@
             const count = positions.length / 3;
 
             if (targetState === 'TREE') {
-                group.rotation.y += 0.02;
+                group.rotation.y += 0.003;
 
                 for (let i = 0; i < count; i++) {
                     sizes[i] = baseSize;
@@ -458,7 +458,7 @@
             requestAnimationFrame(animate);
             const time = Date.now() * 0.001;
             const speed = 0.08;
-            const handRotY = (handX - 0.5) * 4.0;
+            const handRotY = (handX - 0.5) * 8.0;
 
             updateParticleGroup(groupGold, 'gold', state, speed, handRotY, time);
             updateParticleGroup(groupRed, 'red', state, speed, handRotY, time);
